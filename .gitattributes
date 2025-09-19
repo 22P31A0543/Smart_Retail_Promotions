@@ -1,0 +1,11 @@
+
+
+# Ignore PowerShell
+*.ps1 linguist-detectable=false
+
+# Detect React + Python properly
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
+*.py linguist-detectable=true
+*.css linguist-detectable=true
+*.html linguist-detectable=true
