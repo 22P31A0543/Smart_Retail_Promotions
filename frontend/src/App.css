@@ -1,0 +1,105 @@
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.campaign-form {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.campaign-form button {
+  background: #646cff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.campaign-form button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+.error {
+  color: #d32f2f;
+  margin-top: 0.5rem;
+}
+.success {
+  color: #388e3c;
+  margin-top: 0.5rem;
+}
+.campaign-list {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  border: 1px solid #eee;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+th {
+  background: #f5f5f5;
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem 0.25rem;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  th, td {
+    padding: 0.5rem 0.25rem;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  th {
+    background: none;
+    font-weight: bold;
+  }
+  tr {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f5f5f5;
+  }
+}
